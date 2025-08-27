@@ -1,0 +1,16 @@
+# git
+git config --global push.autoSetupRemote true
+git config --global pull.rebase true
+git config --global branch.sort=-committerdate
+git config --global http.postBuffer 524288000
+git config --global core.compression 0
+
+
+# k8s
+export KUBECONFIG=~/.kube/config-stage:~/.kube/config-prod;kubectl config view --merge --flatten > ~/.kube/merged-config
+mv .kube/merged-config .kube/config
+
+# direnv
+sudo pacman -S direnv
+direnv allow
+
