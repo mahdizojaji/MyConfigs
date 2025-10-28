@@ -1,0 +1,1 @@
+path: ~/.config/fontconfig/fonts.conf
